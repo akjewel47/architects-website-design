@@ -118,15 +118,26 @@ font-size: 2.8rem;
 color: #424242;
  }
 
-
+     /*mobile divices Responsive */
 @media screen and (max-width:576px) {
  header{
-  padding: 50px;
+  padding: 20px;
  }
  nav ,
- .teams-container{
+ .teams-container,
+ .facts-card-container{
   flex-direction: column;
  }
+ .teams-img-container{
+  grid-template-columns: 1fr;
+ }
+ .teams-content , .facts-card-container{
+  padding-left: 20px;
+  padding-right: 20px;
+  }
+.facts-card-container{
+ gap: 20px;
+}
 }
 
 /* medium device */
@@ -139,8 +150,11 @@ color: #424242;
  nav{
  flex-direction: column;
 }
-.teams-img-container{
- grid-template-columns: 1fr;
+.teams-img-container,
+.teams-content,
+.teams-titile{
+ display: grid;
+ grid-template-columns: repeat(1fr);
 }
 .teams-content{
  padding-left: 20px;
