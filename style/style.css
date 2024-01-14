@@ -230,7 +230,7 @@ margin-left: 0;
  nav,
  .Feature,
  .teams-container,
- .sponsors-img-container
+ .sponsors-img-container, .teams-img-container
  {
  flex-direction: column;
 }
